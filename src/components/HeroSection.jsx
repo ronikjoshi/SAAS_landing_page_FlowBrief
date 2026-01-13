@@ -64,7 +64,26 @@ const HeroSection = () => {
             </button>
           
           </div>
-
+          {isMenuOpen && (
+          <div className='md:hidden mt-4 py-4 bg-black/90 backdrop-blur-md rounded-lg'>
+            {navItems.map((item, index) => (
+              <a
+              key={item.name}
+              href={item.link}
+              className='block py-2 px-6 text-white/80 hover:text-white hover:bg-white/10'
+              onClick={() => setIsMenuOpen(false)}
+              >
+                {item.name}
+              </a>
+            ))}
+            <button className='block mt-4 mx-4 px-4 py-2 px-6 bg-white text-black font-semibold rounded-lg hover:bg-gray-200 transition-colors'>
+              Sign in
+            </button>
+            <button className='block mt-6 mx-4 px-4 py-2 px-2 bg-white text-black font-semibold rounded-lg hover:bg-gray-200 transition-colors'>
+              Talk to us
+            </button>
+          </div>
+          )}
         </nav>  
       </div>
     </div>
