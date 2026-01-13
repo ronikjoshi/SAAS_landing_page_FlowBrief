@@ -84,7 +84,18 @@ const HeroSection = () => {
             </button>
           </div>
           )}
-        </nav>  
+        </nav> 
+
+        <h1>
+          Build your Digital
+          <span>
+            Future With Us
+          </span>
+        </h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore fuga asperiors laborum?
+        </p>
+      
       </div>
     </div>
   )
