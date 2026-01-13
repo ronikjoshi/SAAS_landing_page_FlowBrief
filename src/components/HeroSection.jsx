@@ -23,22 +23,29 @@ const HeroSection = () => {
             <div className='p-2 bg-blue-500 rounded-lg'>
               <HomeIcon className='w-6 h-6 text-white'/>
             </div>
-            <div className='text-2xl font-bold text-white'>
+            <span className='text-2xl font-bold text-white'>
               Education
-            </div>
+            </span>
           </div> 
-          <div className=''>
+          <div className='hidden md:flex items-center space-x-8'>
             {navItems.map((item, index) => (
               <a
               key={item.name}
               href={item.link}
-              className='text-white text-lg'
+              className='text-white/80 hover:text-white transition-colors text-lg'
               >
                 {item.name}
               </a>
             ))}
           </div>
-          <div>CTA</div>
+          <div className='hidden md:flex items-center space-x-3'>
+            <button className='px-6 py-2 bg-white text-black font-semibold rounded-xl hover:bg-gray-200 transition-colors'>
+              Sign in
+            </button>
+            <button className='px-6 py-2 bg-white text-black font-semibold rounded-xl hover:bg-gray-200 transition-colors'>
+              Talk to us
+            </button>
+          </div>
         </div>
       </div>
     </div>
