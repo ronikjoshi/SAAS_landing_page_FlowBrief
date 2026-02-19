@@ -3,9 +3,9 @@ import heroImage from '../../assets/hero.png';
 
 const HeroSection = () => {
   return (
-      <section>
+      <section className='relative h-screen w-full'>
         <div 
-        className='h-screen w-full bg-cover bg-center bg-no-repeat flex flex-col'
+        className='absolute inset-0 bg-cover bg-center bg-no-repeat'
         style={{backgroundImage: `url(${heroImage})`}}>
         </div>
         <div className='flex justify-between p-6'>
